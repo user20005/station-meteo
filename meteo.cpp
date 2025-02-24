@@ -175,7 +175,7 @@ int meteo::json(){
       QFile file("C:/Users/frti1017/Documents/GUI-Vision/result_storage.txt");
       if(file.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
       {
-          // We're going to streaming text to the file
+         
           QTextStream stream(&file);
 
           stream << "Moyenne de température entre 8h et 18h :\n  ->   " + QString::number(avTemp) + "°C" + date1;
